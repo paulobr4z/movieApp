@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Movies } from '../../types/movies';
 
 import { api } from '../../services/api';
+import { API_KEY } from '@env'
 
 import {
   Container,
@@ -10,6 +11,8 @@ import {
 
 export function Home() {
   const [movies, setMovies] = useState<Movies>();
+
+  console.log(API_KEY)
 
   useEffect(() => {
     async function getMovie() {

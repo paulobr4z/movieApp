@@ -1,0 +1,2 @@
+export const GET_POSTER_IMAGE = (apiKey: string) => `trending/all/week?api_key=${apiKey}&language=pt-br`;
+export const GET_TRENDING_MOVIES = (apiKey: string) => `trending/movie/week?api_key=${apiKey}&language=pt-br`;
